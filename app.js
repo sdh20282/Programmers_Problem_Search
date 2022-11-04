@@ -74,12 +74,6 @@ function updateProblemToShow() {
 
     if (!existSelected) {
         initProblemToShow();
-
-        for (const key in problemList) {
-            const problems = problemList[key];
-    
-            problemToShow.push(...problems);
-        }
     } else {
         problemToShow.push(...problemSelected);
         displayProblems();
@@ -160,8 +154,7 @@ $difficultyBtnList.forEach((button) => {
 // clear input
 $resetBtn.addEventListener('click', (event) => {
     $userInput.value = '';
-    initProblemToShow();
-    displayProblems();
+    updateProblemToShow();
 });
 
 // remove default form action
