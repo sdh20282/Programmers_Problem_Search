@@ -136,7 +136,7 @@ getProblemData()
         initProblemToShow();
     });
 
-$userInput.addEventListener('keypress', function (event) => {
+$userInput.addEventListener('keypress', function (event) {
     if(event.keyCode == '13') {
         return;
     }
