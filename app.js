@@ -136,10 +136,12 @@ getProblemData()
         initProblemToShow();
     });
 
+$form.addEventListener('submit', (event) => {
+    event.preventDefault();
+});
+
 $userInput.addEventListener('input', function (event) {
-    if(event.keyCode != '13') {
-        searchProblem();
-    }
+    searchProblem();
 });
 
 // level select buttons
