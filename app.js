@@ -136,7 +136,7 @@ getProblemData()
         initProblemToShow();
     });
 
-$form.addEventListener('submit', (event) => {
+$form.addEventListener('click', (event) => {
     event.preventDefault();
 });
 
