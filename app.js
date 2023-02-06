@@ -137,8 +137,9 @@ getProblemData()
     });
 
 $userInput.addEventListener('input', function (event) {
-    event.preventDefault();
-    searchProblem();
+    if(event.keyCode != '13') {
+        searchProblem();
+    }
 });
 
 // level select buttons
