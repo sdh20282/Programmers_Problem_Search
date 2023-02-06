@@ -137,6 +137,7 @@ getProblemData()
     });
 
 $userInput.addEventListener('input', function (event) {
+    event.preventDefault();
     searchProblem();
 });
 
