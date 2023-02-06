@@ -136,8 +136,10 @@ getProblemData()
         initProblemToShow();
     });
 
-$form.addEventListener('click', (event) => {
-    event.preventDefault();
+$userInput.addEventListener('keypress', function (event) => {
+    if(event.keyCode == '13') {
+        return;
+    }
 });
 
 $userInput.addEventListener('input', function (event) {
